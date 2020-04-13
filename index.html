@@ -10,27 +10,46 @@
   <a class="logo">Caroline Mandy</a>
 </fieldset>
 
-<header class="header">
+<div class="header">
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
-    <li><a href="#auteur">L'auteur</a></li>
-    <li><a href="#livres">Les livres</a></li>
-    <li><a href="#media">Media</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#" id=auteur>L'auteur</a></li>
+    <li><a href="#" id=livres>Les livres</a></li>
+    <li><a href="#" id=media >Media</a></li>
+    <li><a href="#" id=contact>Contact</a></li>
   </ul>
-</header>
+</div>
 
-<body>
-<fieldset id=#auteur>
 
-    <a>"WHAT" </a>
+<div class="section">
+        <p id=content></p>
 <!--    <form action="mailto:you@yourdmainhere.com" method="post" enctype="text/plain" >
     FirstName:<input type="text" name="FirstName">
     Email:<input type="text" name="Email">
     <input type="submit" name="submit" value="Submit">
     </form>
 -->
-</fieldset>
-</body>
+</div>
 </html>
+<script>
+    document.getElementById("auteur").onclick = function() {
+        console.log("auteur");
+        document.getElementById("content").innerHTML = "BLALBLABLA L AUTEUR"
+    };
+
+    document.getElementById("livres").onclick = function () {
+        document.getElementById("content").innerHTML = "BLALBLABLA LES LIVRES"
+        console.log("livre");
+    };
+
+    document.getElementById("media").onclick = function() {
+        console.log("media");
+        document.getElementById("content").innerHTML = "BLALBLABLA LES MEDIAS"
+    };
+
+    document.getElementById("contact").onclick = function() {
+        console.log("contact");
+        document.getElementById("content").innerHTML = "BLALBLABLA LES CONTACT"
+    };
+</script>

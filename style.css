@@ -116,3 +116,22 @@
     display: none;
   }
 }
+
+/* section */
+
+.section {
+  position: fixed;
+  margin: auto;
+  max-width: 1400px;
+}
+
+.section p {
+  float: left;
+  width: 100%;
+}
+
+.section b {
+  float: left;
+  width: 100%;
+}
+
